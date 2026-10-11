@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doszhan Bakytuly — Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="transition-colors duration-300 antialiased selection:bg-indigo-500 selection:text-white">
+    <header class="sticky top-0 z-50 backdrop-blur-md border-b px-6 py-4 transition-colors duration-300" style="background-color: var(--card-bg); border-color: var(--border-color);">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#about" class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent transition-transform duration-200 hover:scale-105 active:scale-95">Doszhan Bakytuly</a>
+            <nav class="flex gap-6 items-center text-sm font-medium">
+                <a href="#about" class="transition-all duration-200 hover:text-indigo-600 hover:-translate-y-0.5 active:scale-95" style="color: var(--text-color);">About</a>
+                <a href="#projects" class="transition-all duration-200 hover:text-indigo-600 hover:-translate-y-0.5 active:scale-95" style="color: var(--text-color);">Projects</a>
+                <a href="#contact" class="transition-all duration-200 hover:text-indigo-600 hover:-translate-y-0.5 active:scale-95" style="color: var(--text-color);">Contact</a>
+                <button id="theme-toggle" class="px-3.5 py-1.5 rounded-xl border text-xs font-semibold transition-all duration-200 shadow-xs cursor-pointer hover:border-indigo-500 hover:text-indigo-600 hover:-translate-y-0.5 active:scale-95" style="background-color: var(--card-bg); color: var(--text-color); border-color: var(--border-color);">Dark Mode</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 flex flex-col gap-24">
+        <section id="about" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-12">
+            <div class="flex flex-col gap-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold w-fit mx-auto md:mx-0 border shadow-xs" style="background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--border-color);">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                    <span>IT Management Student at KBTU</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight leading-tight">Hi, I'm <span class="bg-gradient-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent">Doszhan</span></h1>
+                <p class="text-base leading-relaxed" style="color: var(--text-muted);">I am passionate about building modern web applications, exploring software architectures, and developing clean mobile and web interfaces. Dedicated to mastering full-stack software development.</p>
+                <div>
+                    <a href="#contact" class="inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white px-7 py-3.5 rounded-xl font-semibold shadow-lg shadow-indigo-500/25 transition transform active:scale-95">Get in Touch</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 to-violet-600 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="avatar.jpg" alt="Doszhan Bakytuly profile picture" class="relative w-72 h-72 md:w-80 md:h-80 object-cover rounded-2xl shadow-xl border-2" style="border-color: var(--border-color);">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-6">
+            <div class="flex flex-col gap-2 mb-12 text-center md:text-left">
+                <h2 class="text-3xl font-black tracking-tight">Featured Projects</h2>
+                <p class="text-sm" style="color: var(--text-muted);">Real academic works, university builds, and practical implementations.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="p-8 rounded-2xl border shadow-sm transition-all duration-300 flex flex-col justify-between group" style="background-color: var(--card-bg); border-color: var(--border-color);">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex justify-between items-center">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center font-bold text-base border" style="background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--border-color);">01</div>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg border" style="background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--border-color);">React & TS</span>
+                        </div>
+                        <h3 class="text-xl font-bold transition">Profile Component React</h3>
+                        <p class="text-sm leading-relaxed" style="color: var(--text-muted);">Interactive profile card component featuring local state management, like counters, and automated unit testing.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t" style="border-color: var(--border-color);">
+                        <a href="https://github.com/Dddsss11111/iwamad-practice" target="_blank" class="inline-flex items-center gap-1.5 text-indigo-600 dark:text-indigo-400 text-sm font-semibold hover:gap-2.5 transition-all">View Repository &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="p-8 rounded-2xl border shadow-sm transition-all duration-300 flex flex-col justify-between group" style="background-color: var(--card-bg); border-color: var(--border-color);">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex justify-between items-center">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center font-bold text-base border" style="background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--border-color);">02</div>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg border" style="background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--border-color);">Python</span>
+                        </div>
+                        <h3 class="text-xl font-bold transition">Python Labs (PP2)</h3>
+                        <p class="text-sm leading-relaxed" style="color: var(--text-muted);">Collection of algorithms, data structures, and problem solutions implemented in Python during university coursework.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t" style="border-color: var(--border-color);">
+                        <a href="https://github.com/Dddsss11111/PP2labs" target="_blank" class="inline-flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 text-sm font-semibold hover:gap-2.5 transition-all">View Repository &rarr;</a>
+                    </div>
+                </article>
+
+                <article class="p-8 rounded-2xl border shadow-sm transition-all duration-300 flex flex-col justify-between group" style="background-color: var(--card-bg); border-color: var(--border-color);">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex justify-between items-center">
+                            <div class="w-12 h-12 rounded-xl flex items-center justify-center font-bold text-base border" style="background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--border-color);">03</div>
+                            <span class="text-xs font-semibold px-2.5 py-1 rounded-lg border" style="background-color: var(--badge-bg); color: var(--badge-text); border-color: var(--border-color);">iOS / Swift</span>
+                        </div>
+                        <h3 class="text-xl font-bold transition">iOS Development Practice</h3>
+                        <p class="text-sm leading-relaxed" style="color: var(--text-muted);">Mobile application development projects focusing on Swift, UI layouts, and interactive mobile interfaces.</p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t" style="border-color: var(--border-color);">
+                        <a href="https://github.com/Dddsss11111/IosPractice" target="_blank" class="inline-flex items-center gap-1.5 text-sky-600 dark:text-sky-400 text-sm font-semibold hover:gap-2.5 transition-all">View Repository &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="py-6 max-w-xl mx-auto w-full">
+            <div class="flex flex-col gap-2 mb-8 text-center">
+                <h2 class="text-3xl font-black tracking-tight">Contact Me</h2>
+                <p class="text-sm" style="color: var(--text-muted);">Have a question or want to collaborate? Send a message.</p>
+            </div>
+            <form id="contact-form" novalidate class="p-8 md:p-10 rounded-2xl border shadow-sm flex flex-col gap-5" style="background-color: var(--card-bg); border-color: var(--border-color);">
+                <div class="flex flex-col gap-1.5">
+                    <label for="name" class="font-medium text-sm">Name</label>
+                    <input type="text" id="name" class="rounded-xl p-3.5 text-sm border focus:outline-none focus:ring-2 focus:ring-indigo-600 transition" style="background-color: var(--input-bg); border-color: var(--border-color); color: var(--text-color);" placeholder="Your name">
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label for="email" class="font-medium text-sm">Email</label>
+                    <input type="email" id="email" class="rounded-xl p-3.5 text-sm border focus:outline-none focus:ring-2 focus:ring-indigo-600 transition" style="background-color: var(--input-bg); border-color: var(--border-color); color: var(--text-color);" placeholder="student@kbtu.kz">
+                </div>
+
+                <div class="flex flex-col gap-1.5">
+                    <label for="message" class="font-medium text-sm">Message</label>
+                    <textarea id="message" rows="4" class="rounded-xl p-3.5 text-sm border focus:outline-none focus:ring-2 focus:ring-indigo-600 transition resize-none" style="background-color: var(--input-bg); border-color: var(--border-color); color: var(--text-color);" placeholder="Your message..."></textarea>
+                </div>
+
+                <div id="form-feedback" class="text-sm font-medium hidden p-4 rounded-xl"></div>
+
+                <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white py-4 rounded-xl font-semibold shadow-lg shadow-indigo-500/25 transition mt-2 cursor-pointer active:scale-95">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="border-t py-8 text-center text-sm transition-colors duration-300" style="background-color: var(--card-bg); border-color: var(--border-color); color: var(--text-muted);">
+        <p>&copy; 2026 Doszhan Bakytuly. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
